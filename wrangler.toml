@@ -22,7 +22,7 @@ name = "cloudflare-docker-proxy"
 #   { pattern = "k8s-gcr.susyun.com", custom_domain = true },
 #   { pattern = "k8s.susyun.com", custom_domain = true },
 #   { pattern = "ghcr.susyun.com", custom_domain = true },
-#   { pattern = "cloudsmith.lsusyun.com", custom_domain = true },
+#   { pattern = "cloudsmith.susyun.com", custom_domain = true },
 # ]
 
 [env.production.vars]
@@ -31,7 +31,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
+# route = { pattern = "docker-staging.susyun.com", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
